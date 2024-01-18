@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("./img/bg.jpg");
+  block-size: cover;
+  padding-top: 100px;
+  animation-name: bg;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.weather {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.from input {
+  width: 80%;
+  padding: 10px;
+}
+
+.from button {
+  width: 20%;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
